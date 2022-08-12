@@ -1,0 +1,34 @@
+:root {
+  --bg-color: rgb(22, 22, 22);
+  --primary-color: rgb(226, 226, 226);
+  --red: rgb(172, 0, 0);
+  --margintop: 70px;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  display: grid;
+  place-items: center;
+}
+
+img {
+  width: 350px;
+  display: block;
+  border-radius: 50%;
+  margin: var(--margintop) 0px;
+}
+.about {
+  margin: var(--margintop) 0px;
+  line-height: 2;
+}
+a.link {
+  width: 130px;
+  background-color: var(--red);
+  color: var(--primary-color);
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  margin: 20px 0;
+}
