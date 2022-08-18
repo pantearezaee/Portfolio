@@ -10,19 +10,84 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;1,300&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
-    <title>Projects</title>
+    <title>Home</title>
   </head>
   <body>
+    
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Pantea</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/project.html"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
     <div class="container mt-5">
-      <div class="row mt-5">
-        <div class="col-sm-8">Featured Projects</div>
-        <div class="col-sm-4"><a href="/projects.html">view all</a></div>
+      <div class="row mt-5 p-5">
+        <div class="col-sm-10 p-3">Featured Projects</div>
+        <div class="col-sm-2">
+          <a href="/project.html" class="link p-3">view all</a>
+        </div>
       </div>
+      <div class="row projects">
+        <div class="col-md-6">
+          <img src="/images/weatherapp.png" alt="" />
+          <a href="" class="d-block text-danger p-3 m-3">weather app</a>
+        </div>
+        <div class="col-md-6">
+          <div class="border">
+          <img src="/images/portfolio.png" alt="" />
+          </div>
+          <a href="" class="d-block text-danger p-3 m-3">Portfolio</a>
+          
+        </div>
+        <div class="col-md-6">
+          <img src="/images/calculator.png" alt="" />
+          <a href="" class="d-block text-danger p-3 m-3">Calculator</a>
+        </div>
+        <div class="col-md-6">
+          <img src="/images/dictionary.jpg" alt="" />
+          <a href="" class="d-block text-danger p-3 m-3">dictionary</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
       <div class="row">
-        <div class="col-md-6"><img src="/images/weatherapp.png" alt="" /></div>
-        <div class="col-md-6"><img src="/images/portfolio.png" alt="" /></div>
+        <a href="mailto:panteaarezaee@gmil.com" class="p-3 text-center contact"
+          >Contact me</a
+        >
       </div>
     </div>
     <script

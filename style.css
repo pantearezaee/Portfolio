@@ -1,5 +1,5 @@
 :root {
-  --bg-color: rgb(0, 0, 0);
+  --bg-color: rgb(36, 35, 35);
   --primary-color: rgb(226, 226, 226);
   --red: rgb(172, 0, 0);
   --margintop: 70px;
@@ -13,6 +13,36 @@ body {
   color: var(--primary-color);
   display: grid;
   place-items: center;
+  font-family: "Chakra Petch", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: larger;
+}
+
+h1 {
+  font-weight: 700;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+h3 {
+  color: #fff;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6001f,
+      0 0 40px #e6001f, 0 0 50px #e6001f, 0 0 60px #e6001f, 0 0 70px #e6001f;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4d4d, 0 0 40px #ff4d4d,
+      0 0 50px #ff4d4d, 0 0 60px #ff4d4d, 0 0 70px #ff4d4d, 0 0 80px #ff4d4d;
+  }
+}
+
+.nav-link {
+  color: rgb(199, 189, 189) !important;
+  padding-right: 15px !important;
 }
 
 .photo img {
@@ -44,6 +74,7 @@ a.link {
   text-align: center;
   padding: 20px;
 }
+
 .projects img {
   width: 280px;
   height: 250px;
@@ -59,4 +90,43 @@ a.link {
   text-align: center;
   border-radius: 4px;
   margin: 100px auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.outer-circle {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  position: relative;
+  background-color: gray;
+  margin: 30% auto;
+  padding: 20px;
+}
+
+.inner-circle {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+circle {
+  fill: none;
+  stroke-width: 20px;
+  stroke: url("#linear");
+  stroke-dasharray: 450;
+  stroke-dashoffset: 150;
 }
