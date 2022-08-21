@@ -15,6 +15,7 @@ body {
   place-items: center;
   font-family: "Chakra Petch", sans-serif;
   font-family: "Josefin Sans", sans-serif;
+  font-weight: bolder;
   font-size: larger;
 }
 
@@ -90,4 +91,55 @@ a.link {
   text-align: center;
   border-radius: 4px;
   margin: 100px auto;
+}
+
+.card img {
+  width: 12rem;
+  height: 12rem !important;
+  box-shadow: -5px 5px 18px var(--bg-color);
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+input {
+  color: rgba(245, 245, 220, 0.555);
+  background-color: #292929;
+  display: block;
+  margin: 30px 0;
+  width: 450px;
+  border: none;
+  border-radius: 6px;
+  text-align: start;
+  padding: 8px 10px;
+}
+
+h5 {
+  font-weight: 900;
+  text-shadow: 0px 0px 2px whitesmoke;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+button.submit {
+  width: 150px;
+  margin-top: 25px;
+}
+
+p {
+  display: inline;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+img.reach {
+  width: 300px;
+  height: 300px;
+  margin-left: 80px;
 }
